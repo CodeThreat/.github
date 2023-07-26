@@ -1,8 +1,8 @@
 # CodeThreat SAST 
 
-## 🚀 Roadmap
-
+## 🚀 Roadmap 
 Our mission is to empower developers with a powerful SAST tool that seamlessly integrates into their workflows, helping them identify and mitigate potential security vulnerabilities from the earliest stages of development.
+See the current progress -> [Roadmap Board](https://github.com/orgs/CodeThreat/projects/3/)
 
 ### Our Vision
 
