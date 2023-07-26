@@ -18,6 +18,8 @@ We envision a world where secure code is not an afterthought but an intrinsic pa
 
 3. **Enhanced Integrations**: Seamlessly integrate with a diverse range of version control systems, issue trackers, and CI/CD tools, providing teams with a unified security experience.
 
+4. **Software Composition Analysis**: Developing SCA Module to analyze project metadata and package manager dependencies, enhancing the project overview.
+
 ### 📞 Contact Us
 
 Got questions or suggestions? Reach out to our team at [info@codethreat.com](mailto:info@codethreat.com). We'd love to hear from you!
