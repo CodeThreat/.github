@@ -1,0 +1,113 @@
+name: Task
+description: Create a task for development, maintenance, or operational work
+title: "[Task]: "
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for development tasks, maintenance work, refactoring, documentation, or other operational tasks.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Task Description
+      description: A clear and concise description of the task
+      placeholder: Describe what needs to be done...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: task-type
+    attributes:
+      label: Task Type
+      description: What type of task is this?
+      options:
+        - Development
+        - Refactoring
+        - Documentation
+        - Testing
+        - Maintenance
+        - DevOps/Infrastructure
+        - Research
+        - Code Review
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Related Component
+      description: Which component of CodeThreat does this task relate to?
+      options:
+        - Agentic SAST
+        - FP Elimination
+        - PR Review
+        - Traditional SAST
+        - SCA (Software Composition Analysis)
+        - Platform/UI
+        - API
+        - Integration
+        - Infrastructure
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Define what "done" looks like for this task
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical
+    attributes:
+      label: Technical Details
+      description: Technical approach, implementation details, or considerations
+      placeholder: Describe the technical approach, dependencies, or any important considerations
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: List any dependencies, blockers, or related issues
+      placeholder: |
+        - Depends on: #issue-number
+        - Blocks: #issue-number
+        - Related to: #issue-number
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Priority level for this task
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+
+  - type: textarea
+    id: estimate
+    attributes:
+      label: Estimated Effort
+      description: Estimated time or story points (if applicable)
+      placeholder: e.g., "2 days", "5 story points", "1 week"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
+      placeholder: Additional context, notes, or references
+

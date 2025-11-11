@@ -1,0 +1,136 @@
+name: Epic
+description: Create an epic for large features or initiatives that span multiple issues
+title: "[Epic]: "
+labels: ["epic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for epics - large features or initiatives that will be broken down into multiple issues/tasks.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Epic Description
+      description: A high-level description of the epic
+      placeholder: Describe the epic and its overall goal...
+    validations:
+      required: true
+
+  - type: textarea
+    id: business-value
+    attributes:
+      label: Business Value / Goal
+      description: What business value or goal does this epic achieve?
+      placeholder: |
+        Describe the business value, user benefit, or strategic goal this epic addresses.
+        For example: "Improve developer experience by reducing false positives in SAST scans"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Primary Component
+      description: Which component of CodeThreat does this epic primarily relate to?
+      options:
+        - Agentic SAST
+        - FP Elimination
+        - PR Review
+        - Traditional SAST
+        - SCA (Software Composition Analysis)
+        - Platform/UI
+        - API
+        - Integration
+        - Cross-Component
+        - Infrastructure
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Define the scope of work included in this epic
+      placeholder: |
+        List the major areas of work or features included in this epic:
+        - Feature/Area 1
+        - Feature/Area 2
+        - Feature/Area 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of Scope
+      description: What is explicitly NOT included in this epic?
+      placeholder: List items that are explicitly out of scope for this epic
+
+  - type: textarea
+    id: user-stories
+    attributes:
+      label: User Stories / Requirements
+      description: High-level user stories or requirements
+      placeholder: |
+        - As a [user type], I want [goal] so that [benefit]
+        - As a [user type], I want [goal] so that [benefit]
+
+  - type: textarea
+    id: sub-issues
+    attributes:
+      label: Related Issues / Tasks
+      description: List of issues, tasks, or features that are part of this epic
+      placeholder: |
+        - #issue-number - Task/Feature description
+        - #issue-number - Task/Feature description
+        Or create placeholder: "To be created"
+
+  - type: textarea
+    id: milestones
+    attributes:
+      label: Milestones / Phases
+      description: Major milestones or phases for this epic
+      placeholder: |
+        Phase 1: [Description] - Target: [Date]
+        Phase 2: [Description] - Target: [Date]
+        Phase 3: [Description] - Target: [Date]
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Strategic priority for this epic
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+      description: How will we measure the success of this epic?
+      placeholder: |
+        - Metric 1: [Target]
+        - Metric 2: [Target]
+        - User feedback: [Criteria]
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks & Dependencies
+      description: Known risks, dependencies, or blockers
+      placeholder: List any risks, external dependencies, or potential blockers
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other relevant information about this epic
+      placeholder: Additional context, references, or strategic notes
+
